@@ -1,9 +1,11 @@
 #include "defs.h"
-#define extern_
 #include "data.h"
-#undef extern_
 #include "func.h"
 #include <errno.h>
+
+extern int Line;
+extern int Putback;
+extern FILE *Infile;
 
 static void init()
 {
